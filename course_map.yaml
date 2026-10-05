@@ -1,0 +1,141 @@
+course:
+  name: Georgia Tech MATH 1554 Linear Algebra
+  project_name: MATH 1554 Visual Companion
+  status: unofficial
+  source: https://cwarnockgt.github.io/MATH-1554---Course-Notes/
+  use_policy: >-
+    Use the public notes as a curriculum-order and learning-objective reference.
+    Link to the source; create original examples, prose, code, and animations.
+
+chapters:
+  - number: 1
+    title: Linear Equations in Linear Algebra
+    status: implemented
+    sections:
+      - number: "1.1"
+        title: "Systems of Linear Equations"
+        source_url: https://cwarnockgt.github.io/MATH-1554---Course-Notes/Section-1-1.html
+        status: implemented
+        source_file: src/math1554_visuals/chapter01/section_01_01_systems_of_linear_equations/scenes.py
+        focus:
+          - systems of equations
+          - geometric solution sets
+          - augmented matrices
+          - elementary row operations
+          - consistency and uniqueness
+        scenes:
+          - LinearEquationAsLine
+          - SolutionCountCases
+          - PlaneIntersectionCases
+          - EquationsToAugmentedMatrix
+          - ElementaryRowOperations
+          - RowOperationsPreserveSolutionSet
+          - ConsistencyAndUniqueness
+      - number: "1.2"
+        title: "Row Reduction and Echelon Forms"
+        source_url: https://cwarnockgt.github.io/MATH-1554---Course-Notes/sec-1-2.html
+        status: implemented
+        source_file: src/math1554_visuals/chapter01/section_01_02_row_reduction_and_echelon_forms/scenes.py
+        focus:
+          - REF and RREF
+          - pivot positions and pivot columns
+          - row-reduction algorithm
+          - pivot and free variables
+          - existence and uniqueness
+        scenes:
+          - REFvsRREF
+          - PivotPositionsAndColumns
+          - RowReductionAlgorithm
+          - PivotAndFreeVariables
+          - ExistenceAndUniquenessFlowchart
+          - PolynomialInterpolation
+      - number: "1.3"
+        title: "Vector Equations"
+        source_url: https://cwarnockgt.github.io/MATH-1554---Course-Notes/sec-1-3.html
+        status: implemented
+        source_file: src/math1554_visuals/chapter01/section_01_03_vector_equations/scenes.py
+        focus:
+          - vectors in R^n
+          - scalar multiplication
+          - vector addition
+          - linear combinations
+          - span
+        scenes:
+          - PointVsVector
+          - ScalarMultiplication
+          - VectorAdditionParallelogram
+          - LinearCombinationBuildsTarget
+          - SpanOfOneVector
+          - SpanOfTwoVectors
+          - SpanMembershipAsSystem
+      - number: "1.4"
+        title: "The Matrix Equation Ax = b"
+        source_url: https://cwarnockgt.github.io/MATH-1554---Course-Notes/sec-1-4.html
+        status: implemented
+        source_file: src/math1554_visuals/chapter01/section_01_04_matrix_equation/scenes.py
+        focus:
+          - matrix-vector multiplication
+          - column combinations
+          - equivalent representations
+          - column span and consistency
+          - pivots in every row
+        scenes:
+          - DimensionsOfAx
+          - MatrixVectorAsColumnCombination
+          - FourEquivalentRepresentations
+          - ColumnSpanAndExistence
+          - ConsistentForEveryB
+      - number: "1.5"
+        title: "Solution Sets of Linear Systems"
+        source_url: https://cwarnockgt.github.io/MATH-1554---Course-Notes/sec-1-5.html
+        status: implemented
+        source_file: src/math1554_visuals/chapter01/section_01_05_solution_sets/scenes.py
+        focus:
+          - homogeneous systems
+          - parametric vector form
+          - free variables
+          - geometric solution sets
+          - trivial and nontrivial solutions
+        scenes:
+          - HomogeneousAlwaysContainsZero
+          - FreeVariableCreatesDirection
+          - ParametricVectorForm
+          - HomogeneousVsInhomogeneousGeometry
+          - TrivialVsNontrivialSolutions
+      - number: "1.7"
+        title: "Linear Independence"
+        source_url: https://cwarnockgt.github.io/MATH-1554---Course-Notes/sec-1-7.html
+        status: implemented
+        source_file: src/math1554_visuals/chapter01/section_01_07_linear_independence/scenes.py
+        focus:
+          - linear independence
+          - linear dependence
+          - dependence relations
+          - pivot test
+          - dimension constraints
+        scenes:
+          - IndependentVsDependent2D
+          - OnlyTrivialCombination
+          - DependenceRelation
+          - PivotTestForIndependence
+          - TooManyVectorsInR2
+          - ZeroVectorForcesDependence
+      - number: "1.8"
+        title: "An Introduction to Linear Transformations"
+        source_url: https://cwarnockgt.github.io/MATH-1554---Course-Notes/sec-1-8.html
+        status: implemented
+        source_file: src/math1554_visuals/chapter01/section_01_08_linear_transformations/scenes.py
+        focus:
+          - matrix transformations
+          - domain and codomain
+          - image and range
+          - linearity
+          - geometric transformations
+          - basis-vector images
+        scenes:
+          - DomainCodomainImageRange
+          - ExistenceAndUniquenessUnderT
+          - ShearTransformation
+          - ProjectionAndRange
+          - LinearitySuperposition
+          - BasisVectorsDetermineTransformation

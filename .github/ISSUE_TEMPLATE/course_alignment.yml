@@ -1,0 +1,29 @@
+name: Course alignment issue
+description: Report a mismatch with the current public MATH 1554 sequence or objectives.
+title: "[Alignment]: "
+labels: ["course-alignment", "documentation"]
+body:
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      placeholder: "e.g. 1.4"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public source link
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: textarea
+    id: mismatch
+    attributes:
+      label: What changed or is mismatched?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed repository update

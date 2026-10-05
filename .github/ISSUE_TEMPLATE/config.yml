@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Manim Community documentation
+    url: https://docs.manim.community/
+    about: Use upstream documentation for general Manim questions that are not specific to this project.

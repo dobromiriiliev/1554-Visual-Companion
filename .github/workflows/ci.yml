@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  static-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install lightweight development dependencies
+        run: python -m pip install pytest ruff PyYAML
+      - name: Lint
+        run: ruff check src tests scripts
+      - name: Tests
+        run: python -m pytest
+      - name: Repository validation
+        run: PYTHONPATH=src python scripts/validate_repository.py
+      - name: Compile Python sources
+        run: python -m compileall -q src scripts tests

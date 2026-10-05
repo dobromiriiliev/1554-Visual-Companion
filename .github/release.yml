@@ -1,0 +1,19 @@
+changelog:
+  exclude:
+    labels:
+      - skip-changelog
+  categories:
+    - title: New visualizations
+      labels:
+        - visualization
+        - enhancement
+    - title: Fixes
+      labels:
+        - bug
+    - title: Documentation and course alignment
+      labels:
+        - documentation
+        - course-alignment
+    - title: Other changes
+      labels:
+        - "*"

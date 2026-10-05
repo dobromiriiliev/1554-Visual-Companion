@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software in teaching, research, or educational tooling, please cite it."
+title: "MATH 1554 Visual Companion"
+type: software
+version: 0.1.0
+date-released: 2026-10-05
+license: MIT
+authors:
+  - name: "MATH 1554 Visual Companion contributors"
+keywords:
+  - linear algebra
+  - mathematical visualization
+  - Manim
+  - open education
+abstract: >-
+  An open-source collection of course-synchronous Manim animations designed to
+  connect geometric intuition with the symbolic content of Georgia Tech MATH 1554.

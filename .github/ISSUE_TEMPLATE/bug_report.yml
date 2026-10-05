@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a rendering, code, packaging, or documentation defect.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for helping improve the Visual Companion.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Scene rendering
+        - Mathematical content
+        - Installation / packaging
+        - CLI / scripts
+        - Documentation
+        - CI / repository tooling
+    validations:
+      required: true
+  - type: input
+    id: scene
+    attributes:
+      label: Scene or section
+      placeholder: "e.g. 1.3 / SpanOfTwoVectors"
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, Manim version, and relevant doctor output.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      render: shell

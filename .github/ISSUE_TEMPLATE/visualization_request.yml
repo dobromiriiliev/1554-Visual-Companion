@@ -1,0 +1,31 @@
+name: Visualization request
+description: Propose a new visual explanation for a course concept.
+title: "[Visual]: "
+labels: ["visualization", "enhancement"]
+body:
+  - type: input
+    id: section
+    attributes:
+      label: Course section
+      placeholder: "e.g. 5.1"
+    validations:
+      required: true
+  - type: textarea
+    id: concept
+    attributes:
+      label: Concept to visualize
+      description: What mathematical relationship should become visible?
+    validations:
+      required: true
+  - type: textarea
+    id: misconception
+    attributes:
+      label: Student intuition gap or misconception
+      description: What is hard to understand from symbols alone?
+    validations:
+      required: true
+  - type: textarea
+    id: sketch
+    attributes:
+      label: Possible visual approach
+      description: Optional. Describe objects, motion, invariants, or before/after states.
